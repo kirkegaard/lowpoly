@@ -1,7 +1,21 @@
-import '../styles/globals.css'
+import ReactGA from "react-ga";
+import { SWRConfig } from "swr";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import "../styles/globals.css";
 
-export default MyApp
+ReactGA.initialize(process.env.NEXT_PUBLIC_ANALYTICS_ID);
+
+const App = ({ Component, pageProps, err }) => {
+  return (
+    <SWRConfig
+      value={{
+        fetcher: (resource, init) =>
+          fetch(resource, init).then((res) => res.json()),
+      }}
+    >
+      <Component {...{ pageProps, err }} />
+    </SWRConfig>
+  );
+};
+
+export default App;
