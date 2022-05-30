@@ -16,7 +16,7 @@ export const Base = ({ title, description, metadata, children }) => {
 export const Layout = ({ children, title, description, metadata }) => {
   return (
     <Base {...{ title, description, metadata }}>
-      <Main className="flex min-h-screen flex-col">
+      <Main className="flex min-h-screen flex-col justify-items-center p-4">
         <Header />
         {children}
       </Main>

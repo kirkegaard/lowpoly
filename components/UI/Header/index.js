@@ -2,8 +2,7 @@ import DarkModeToggle from "../Theme/Toggle";
 
 export const Header = () => {
   return (
-    <header>
-      <h1>Hello friend</h1>
+    <header className="flex justify-end">
       <DarkModeToggle />
     </header>
   );

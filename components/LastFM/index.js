@@ -5,11 +5,7 @@ const apikey = process.env.NEXT_PUBLIC_LASTFM_APIKEY;
 
 const Artist = ({ name, title, href }) => {
   return (
-    <a
-      className="no-underline decoration-pink-500 decoration-4 hover:underline"
-      title={title}
-      href={href}
-    >
+    <a title={title} href={href}>
       {name}
     </a>
   );
@@ -20,8 +16,9 @@ export const LastFM = ({ username, limit, ...rest }) => {
     `https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=${username}&period=7day&limit=${limit}&api_key=${apikey}&format=json`
   );
 
-  if (error) return <div>failed to load</div>;
+  if (error) return <>Could not fetch LastFM</>;
   if (!data) return <Spinner />;
+  if (!data.topartists.artist) return <>No latest artists found</>;
 
   const latestArtists = data.topartists.artist;
   const latest = latestArtists
