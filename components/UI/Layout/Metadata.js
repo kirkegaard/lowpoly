@@ -12,8 +12,8 @@ const DEFAULT_THEME_COLOR = "#FF0000";
 const DEFAULT_TWITTER_SITE = "@ranza";
 const DEFAULT_TWITTER_CREATOR = "@ranza";
 
-const DEFAULT_FB_IMAGE_URL = "/common/graph-logo.jpg";
-const DEFAULT_FB_IMAGE_MIME_TYPE = "image/jpeg";
+const DEFAULT_FB_IMAGE_URL = "/favicon192.png";
+const DEFAULT_FB_IMAGE_MIME_TYPE = "image/png";
 const DEFAULT_FB_IMAGE_HEIGHT = 630;
 const DEFAULT_FB_IMAGE_WIDTH = 1200;
 
@@ -76,27 +76,13 @@ const Metadata = ({
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="da" />
 
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/favicons/apple-touch-icon.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicons/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicons/favicon-16x16.png"
-      />
-      <link rel="manifest" href="/favicons/site.webmanifest" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon192.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon192.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon192.png" />
+      <link rel="manifest" href="/manifest.json" />
       <link
         rel="mask-icon"
-        href="/favicons/safari-pinned-tab.svg"
+        href="/safari-pinned-tab.svg"
         color={DEFAULT_THEME_COLOR}
       />
       <meta name="apple-mobile-web-app-title" content="pip.dk" />
