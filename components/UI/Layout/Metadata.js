@@ -14,8 +14,8 @@ const DEFAULT_TWITTER_CREATOR = "@ranza";
 
 const DEFAULT_FB_IMAGE_URL = "/favicon192.png";
 const DEFAULT_FB_IMAGE_MIME_TYPE = "image/png";
-const DEFAULT_FB_IMAGE_HEIGHT = 630;
-const DEFAULT_FB_IMAGE_WIDTH = 1200;
+const DEFAULT_FB_IMAGE_HEIGHT = 192;
+const DEFAULT_FB_IMAGE_WIDTH = 192;
 
 const Metadata = ({
   title = DEFAULT_TITLE,
@@ -85,8 +85,8 @@ const Metadata = ({
         href="/safari-pinned-tab.svg"
         color={DEFAULT_THEME_COLOR}
       />
-      <meta name="apple-mobile-web-app-title" content="pip.dk" />
-      <meta name="application-name" content="pip.dk" />
+      <meta name="apple-mobile-web-app-title" content="lowpoly.dk" />
+      <meta name="application-name" content="lowpoly.dk" />
       <meta name="msapplication-TileColor" content={DEFAULT_THEME_COLOR} />
       <meta name="theme-color" content={DEFAULT_THEME_COLOR} />
     </Head>
