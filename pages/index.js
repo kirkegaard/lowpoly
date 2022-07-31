@@ -34,15 +34,16 @@ const Home = () => {
           frameworks like Javascript, Processing, and GLSL.
         </p>
         <p>
-          I also build and service old consoles.{" "}
+          I also <a href="https://games.lowpoly.dk">collect</a> and mod old
+          consoles.{" "}
           <a href="https://www.instagram.com/lowpolysaurus/">Mostly Gameboys</a>
           ! Im currently playing{" "}
           <a href="https://en.wikipedia.org/wiki/Ninja_Gaiden_Shadow">
             Ninja Gaiden Shadow
           </a>{" "}
           and{" "}
-          <a href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_A_Link_to_the_Past">
-            Link to the Past
+          <a href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_The_Minish_Cap">
+            Minish Cap
           </a>
         </p>
         <p>
