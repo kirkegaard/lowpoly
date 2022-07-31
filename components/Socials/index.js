@@ -7,6 +7,8 @@ import {
   FaBehance,
   FaFacebook,
   FaLastfm,
+  FaLinkedin,
+  
 } from "react-icons/fa";
 
 const icon_size = 25;
@@ -35,6 +37,10 @@ const links = [
   {
     icon: <FaTumblr size={icon_size} />,
     url: "http://knaegt.dk/",
+  },
+  {
+    icon: <FaLinkedin size={icon_size} />,
+    url: "https://www.linkedin.com/in/christian-kirkegaard/",
   },
   {
     icon: <FaFacebook size={icon_size} />,
