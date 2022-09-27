@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
 import useCanvas from "../../hooks/useCanvas";
 import Vec2 from "../../lib/Geometry/Vec2";
-import { Random } from "../../lib/utils";
+import { Random } from "../../lib/Math";
 
 class Ball extends Vec2 {
   constructor(x, y, r, c) {

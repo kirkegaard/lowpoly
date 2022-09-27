@@ -6,7 +6,7 @@ import { Socials } from "../components/Socials";
 
 import Balls from "../components/Canvas/Balls";
 
-import { Random } from "../lib/utils";
+import { Random } from "../lib/Math";
 
 const greetings = [
   "Hi friend",
