@@ -37,14 +37,7 @@ const Home = () => {
           I also <a href="https://games.lowpoly.dk">collect</a> and mod old
           consoles.{" "}
           <a href="https://www.instagram.com/lowpolysaurus/">Mostly Gameboys</a>
-          ! Im currently playing{" "}
-          <a href="https://en.wikipedia.org/wiki/Ninja_Gaiden_Shadow">
-            Ninja Gaiden Shadow
-          </a>{" "}
-          and{" "}
-          <a href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_The_Minish_Cap">
-            Minish Cap
-          </a>
+          !
         </p>
         <p>
           I&apos;m also obsessed with music and currently listening to:{" "}
