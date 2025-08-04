@@ -10,6 +10,7 @@ import {
   FaLinkedin,
   FaImdb,
 } from "react-icons/fa";
+import styles from './index.module.css';
 
 const icon_size = 25;
 
@@ -57,10 +58,10 @@ const links = [
 ];
 
 export const Socials = () => (
-  <ul className="flex justify-center space-x-2">
+  <ul className={styles.socialsList}>
     {links.map(({ url, icon }) => (
-      <li key={url}>
-        <a href={url}>{icon}</a>
+      <li key={url} className={styles.socialItem}>
+        <a href={url} className={styles.socialLink}>{icon}</a>
       </li>
     ))}
   </ul>

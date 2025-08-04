@@ -1,4 +1,6 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+"use client";
+
+import { useEffect, useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
 import useCanvas from "../../hooks/useCanvas";
 import Vec2 from "../../lib/Geometry/Vec2";

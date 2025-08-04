@@ -1,5 +1,6 @@
+"use client";
+
 import useSWR from "swr";
-import { Spinner } from "../UI/Spinner";
 
 const apikey = process.env.NEXT_PUBLIC_LASTFM_APIKEY;
 
@@ -23,11 +24,12 @@ const ErrorNoLatestArtists = () => (
 
 export const LastFM = ({ username, limit, ...rest }) => {
   const { data, error } = useSWR(
-    `https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=${username}&period=7day&limit=${limit}&api_key=${apikey}&format=json`
+    `https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=${username}&period=7day&limit=${limit}&api_key=${apikey}&format=json`,
+    (url) => fetch(url).then((res) => res.json()),
   );
 
   if (error) return <ErrorRequest />;
-  if (!data) return <Spinner />;
+  if (!data) return "Loading...";
 
   const latestArtists = data.topartists.artist;
 

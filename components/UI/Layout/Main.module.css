@@ -1,0 +1,5 @@
+.main {
+  margin: 0 auto;
+  max-width: var(--max-width-4xl);
+  padding: 0 var(--spacing-md);
+}
