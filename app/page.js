@@ -42,6 +42,12 @@ export default async function Home() {
             <b>Donkey Kong Bananza</b> and <b>Stellar Blade</b>.
           </p>
           <p>
+            I build small, fun projects like <code>$ ssh terminal.pet</code>, a
+            Tamagotchi for your terminal, or{" "}
+            <a href="https://grid.lowpoly.dk">50.000 checkboxes</a>, an
+            experiment in compression and rendering using Go.
+          </p>
+          <p>
             I'm also obsessed with music and currently listening to{" "}
             <LastFM username="ranza" limit={3} />.
           </p>
